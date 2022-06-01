@@ -92,6 +92,19 @@ function isEmpty(str) {
 
 }
 
+module.exports = {
+  capitalize,
+  allCaps,
+  capitalizeWords,
+  capitalizeHeadline,
+  removeExtraSpaces,
+  kebobCase,
+  snakeCase,
+  shift,
+  makeHashTag,
+  isEmpty
+};
+
 // TESTS
 // console.log(capitalizeHeadline("the most foo in bar"));
 // console.log(removeExtraSpaces("   Hello    world!   dylan     !`"));
