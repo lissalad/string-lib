@@ -1,6 +1,6 @@
 // challenge 1
 function capitalize(str) {
-  letters = str.split("");
+  let letters = str.split("");
   letters[0] = letters[0].toUpperCase();
   return letters.join("");
 }
@@ -21,8 +21,8 @@ function capitalizeWords(str) {
 
 // bonus
 function capitalizeHeadline(str) {
-  small = ["and", "an,", "a", "at", "but", "by", "for", "in", "the", "is"];
-  words = str.split(" ");
+  const small = ["and", "an,", "a", "at", "but", "by", "for", "in", "the", "is"];
+  let words = str.split(" ");
 
   // capitalize first regardless
   words[0] = capitalize(words[0])
