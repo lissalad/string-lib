@@ -1,9 +1,7 @@
 # stringLib
 
-### **A String Library**
-### library making practice
+#### library making practice
 
----
 ## Installation
 
 `npm i lissa-stringlib`
@@ -11,25 +9,27 @@
 ---
 # Usage
 
-**`capitalize()'**
+## capitalize()
 ### returns input string with first character capitalized
 
-` capitalize("fish");
+` capitalize("fish");  
   // returns "Fish"
 `
 
-**`allCaps()`**
+## allCaps()
 ### returns input string with all capital characters
 
-` allCaps("salmon");
+` allCaps("salmon");    
   // returns "SALMON"
 `
 
-## **`capitalizeWords()`**
+## capitalizeWords()
 ### returns input string with first character of each word capitalized
 
-` capitalizeWords("you are my best friend");
+` capitalizeWords("you are my best friend");  
   // returns "You Are My Best Friend"
 `
+
+
 
 
