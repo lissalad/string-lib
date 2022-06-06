@@ -13,15 +13,15 @@ function allCaps(str) {
 // challenge 3
 function capitalizeWords(str) {
   let words = str.split(" ");
-  for(let i = 0; i < words.length && i < 3; i += 1) {
-    words[i] = upperFirst(words[i]);
+  for(let i = 0; i < words.length; i += 1) {
+    words[i] = capitalize(words[i]);
   }
   return words.join(" ");
 }
 
 // bonus
 function capitalizeHeadline(str) {
-  small = ["and", "an,", "a", "at", "but", "by", "for", "in", "the"];
+  small = ["and", "an,", "a", "at", "but", "by", "for", "in", "the", "is"];
   words = str.split(" ");
 
   // capitalize first regardless
@@ -31,7 +31,6 @@ function capitalizeHeadline(str) {
   for(let i=1; i < words.length; i+=1) {
     if(!small.includes(words[i])) {
       words[i] = capitalize(words[i]);
-      console.log(words[i]);
     }
   }
   return words.join(" ");
@@ -43,18 +42,29 @@ function removeExtraSpaces(str) {
   return str.replace(/\s\s+/g, ' ');
 }
 
-// challenge 6
+// challenge 5
 function kebobCase(str) {
   str = str.toLowerCase();
   str = removeExtraSpaces(str);
   return str.replace(/\s/g, "-");
 }
 
-// challenge 7
+// challenge 6
 function snakeCase(str, replace = "_") {
   str = str.toLowerCase();
   str = removeExtraSpaces(str);
   return str.replace(/\s/g, replace);
+}
+
+// challenge 7
+function camelCase(str) {
+  str = str.toLowerCase();
+  str = removeExtraSpaces(str);
+  let words = str.split(" ");
+  for (let i=1; i < words.length; i+=1) {
+    words[i] = capitalize(words[i]);
+  }
+  return words.join("");
 }
 
 // challenge 8
@@ -100,6 +110,7 @@ module.exports = {
   removeExtraSpaces,
   kebobCase,
   snakeCase,
+  camelCase,
   shift,
   makeHashTag,
   isEmpty
@@ -112,6 +123,8 @@ module.exports = {
 // console.log(snakeCase(" what the heck "));
 // console.log(shift('foo bar', 3));
 // console.log(makeHashTag("Amazing bongo drums for sale"));
+
+console.log(capitalizeWords("how are you today"));
 
 // const str = `   
 			
