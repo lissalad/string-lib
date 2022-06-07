@@ -56,6 +56,12 @@ test("Test shift", () => {
   expect(index.shift("mornING", 2)).toBe("rnINGmo");
 })
 
+test("Test makeHashTag", () => {
+  expect(index.makeHashTag("such terrific work son")).toStrictEqual(["#terrific", "#such", "#work"]);
+  expect(index.makeHashTag("incredibly GROSS")).toStrictEqual(["#incredibly", "#gross"]);
+  expect(index.makeHashTag("what sparkly masterpieces you create")).toStrictEqual(["#masterpieces", "#sparkly", "#create"]);
+})
+
 test("Test isEmpty", () => {
   expect(index.isEmpty("   ")).toBe(true);
   expect(index.isEmpty("    ")).toBe(true);
