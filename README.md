@@ -10,7 +10,7 @@
 # Usage
 
 ## capitalize()
-### returns input string with first character capitalized
+#### returns input string with first character capitalized
 
 ```js
  capitalize("fish");  
@@ -18,7 +18,7 @@
 ```
 
 ## allCaps()
-### returns input string with all capital characters
+#### returns input string with all capital characters
 
 ```js
 allCaps("salmon");    
@@ -26,7 +26,7 @@ allCaps("salmon");
 ```
 
 ## capitalizeWords()
-### returns input string with first character of each word capitalized
+#### returns input string with first character of each word capitalized
 
 ```js
 capitalizeWords("you are my best friend");  
@@ -34,9 +34,9 @@ capitalizeWords("you are my best friend");
 ```
 
 ## capitalizeHeadline()
-### returns input string with first character of each word capitalized
-### EXCLUDING 
-### "and", "an,", "a", "at", "but", "by", "for", "in", "the", and "is"
+#### returns input string with first character of each word capitalized
+#### EXCLUDING 
+#### "and", "an", "a", "at", "but", "by", "for", "in", "the", and "is"
 
 ```js
 capitalizeHeadline("the bean and the boot");  
@@ -44,8 +44,8 @@ capitalizeHeadline("the bean and the boot");
 ```
 
 ## removeExtraSpaces()
-### returns input string with empty space trimmed from beginning and end,
-### and removes any empty characters more than one space
+#### returns input string with empty space trimmed from beginning and end,
+#### and removes any empty characters more than one space
 
 ```js
 capitalizeWords("  this   is cool     ");  
@@ -53,8 +53,8 @@ capitalizeWords("  this   is cool     ");
 ```
 
 ## kebobCase()
-### returns input string with dashes instead of spaces
-### output is all lowercase, and without extra spaces
+#### returns input string with dashes instead of spaces
+#### output is all lowercase, and without extra spaces
 
 ```js
 kebobCase("cool STory bro  ");  
@@ -62,8 +62,8 @@ kebobCase("cool STory bro  ");
 ```
 
 ## snakeCase()
-### returns input string with underscores instead of spaces
-### output is all lowercase, and without extra spaces
+#### returns input string with underscores instead of spaces
+#### output is all lowercase, and without extra spaces
 
 ```js
 snakeCase(" HOW   many bags ");  
@@ -72,11 +72,9 @@ snakeCase(" HOW   many bags ");
 
 ## camelCase()
 ### returns input string with no spaces
-### each word's first character is capitalized
-### EXCLUDING
-### the first word
+#### each word's first character is capitalized EXCLUDING the first word
 
-### output is otherwise all lowercase
+#### output is otherwise all lowercase
 
 ```js
 camelCase(" Nice  collection there   ");  
@@ -84,8 +82,8 @@ camelCase(" Nice  collection there   ");
 ```
 
 ## shift()
-### returns input string with first character shifted to back
-### with a second int input, specify how many character to shift
+#### returns input string with first character shifted to back
+#### with a second int input, specify how many character to shift
 
 ```js
 shift("really cool");  
@@ -96,9 +94,9 @@ shift("no way", 2);
 ```
 
 ## makeHashTag()
-### returns list of three longest words in input string as hashtags
-## if string is three words or less, all words will be returned as hashtags
-### output is a list of all lowercase terms, beginning with "#"
+#### returns list of three longest words in input string as hashtags
+#### if string is three words or less, all words will be returned as hashtags
+#### output is a list of all lowercase terms, beginning with "#"
 
 ```js
 makeHashTag("so many amazing colors");  
@@ -109,8 +107,8 @@ makeHashTag("wow cool");
 ```
 
 ## isEmpty()
-### returns true if input string is empty
-### an empty string contains only whitespace
+#### returns true if input string is empty
+#### an empty string contains only whitespace
 
 ```js
 isEmpty("       ");  
@@ -119,6 +117,5 @@ isEmpty("       ");
 isEmpty("   hi    ");  
   // returns false
 ```
-
 
 
