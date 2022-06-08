@@ -115,18 +115,3 @@ module.exports = {
   makeHashTag,
   isEmpty
 };
-
-// TESTS
-// console.log(capitalizeHeadline("the most foo in bar"));
-// console.log(removeExtraSpaces("   Hello    world!   dylan     !`"));
-// console.log(kebobCase(" Hello   world      nice   !"));
-// console.log(snakeCase(" what the heck "));
-// console.log(shift('foo bar', 3));
-// console.log(makeHashTag("Amazing bongo drums for sale"));
-
-console.log(capitalizeWords("how are you today"));
-
-// const str = `   
-			
-// 			`;
-// console.log(isEmpty(str));
