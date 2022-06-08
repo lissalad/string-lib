@@ -4,7 +4,7 @@
 
 ## Installation
 
-`npm i lissa-stringlib`
+`npm i lissa-string-lib`
 
 ---
 # Usage
