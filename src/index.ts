@@ -1,17 +1,17 @@
 // challenge 1
-function capitalize(str) {
+function capitalize(str: string): string {
   let letters = str.split("");
   letters[0] = letters[0].toUpperCase();
   return letters.join("");
 }
 
 // challenge 2
-function allCaps(str) {
+function allCaps(str: string): string {
   return str.toUpperCase();
 }
 
 // challenge 3
-function capitalizeWords(str) {
+function capitalizeWords(str: string): string {
   let words = str.split(" ");
   for(let i = 0; i < words.length; i += 1) {
     words[i] = capitalize(words[i]);
@@ -20,7 +20,7 @@ function capitalizeWords(str) {
 }
 
 // bonus
-function capitalizeHeadline(str) {
+function capitalizeHeadline(str: string): string {
   const small = ["and", "an,", "a", "at", "but", "by", "for", "in", "the", "is"];
   let words = str.split(" ");
 
@@ -37,27 +37,27 @@ function capitalizeHeadline(str) {
 }
 
 // challenge 4
-function removeExtraSpaces(str) {
+function removeExtraSpaces(str: string): string {
   str = str.trim();
   return str.replace(/\s\s+/g, ' ');
 }
 
 // challenge 5
-function kebobCase(str) {
+function kebobCase(str: string): string {
   str = str.toLowerCase();
   str = removeExtraSpaces(str);
   return str.replace(/\s/g, "-");
 }
 
 // challenge 6
-function snakeCase(str, replace = "_") {
+function snakeCase(str: string, replace = "_"): string {
   str = str.toLowerCase();
   str = removeExtraSpaces(str);
   return str.replace(/\s/g, replace);
 }
 
 // challenge 7
-function camelCase(str) {
+function camelCase(str: string): string {
   str = str.toLowerCase();
   str = removeExtraSpaces(str);
   let words = str.split(" ");
@@ -68,17 +68,17 @@ function camelCase(str) {
 }
 
 // challenge 8
-function shift(str, pos=1) {
+function shift(str: string, pos=1): string {
   const start = str.slice(pos);
   const end = str.slice(0,pos);
   return start + end;
 }
 
 // challenge 9
-function makeHashTag(str) {
+function makeHashTag(str: string): string[] {
   let words = str.split(" ");
   words = words.sort((a, b) => b.length - a.length);
-  let tags = [];
+  let tags: string[] = [];
 
   let numTags = 0;
   if (words.length > 3) {
@@ -96,10 +96,9 @@ function makeHashTag(str) {
 }
 
 // challenge 10
-function isEmpty(str) {
+function isEmpty(str: string): boolean {
   str = str.replace(/\s/g, "");
   return str === "";
-
 }
 
 module.exports = {
